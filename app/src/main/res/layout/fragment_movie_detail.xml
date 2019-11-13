@@ -1,0 +1,140 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myreview.ui.movie_detail.MovieDetailFragment">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/toystory_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A6000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_oval="true"
+       android:src="@drawable/sample_profile_img" />
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        style="@style/MovieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toy Story 4"
+        app:layout_constraintBottom_toTopOf="@+id/textView40"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:textSize="12sp"
+        style="@style/MovieRelease"
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#Fantasy #Advanture"
+        app:layout_constraintBottom_toTopOf="@+id/textView39"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:layout_marginBottom="7dp"
+        android:textSize="12sp"
+        style="@style/MovieDetailWhite"
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animation"
+        app:layout_constraintBottom_toTopOf="@+id/textView38"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:layout_marginBottom="7dp"
+        android:textSize="12sp"
+        android:id="@+id/textView38"
+        style="@style/MovieDetailWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Woody, Buzz Lightyear and the rest of the gang embark on a road trip with Bonnie and a new toy named Forky."
+        app:layout_constraintBottom_toTopOf="@+id/textView37"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:layout_marginBottom="4dp"
+        app:fontFamily="@font/hanken"
+        android:id="@+id/textView37"
+        android:textSize="18sp"
+        android:textColor="#FFE1AB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviews"
+        app:layout_constraintBottom_toTopOf="@+id/textView36"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:layout_marginBottom="4dp"
+        android:textSize="14sp"
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_star_yellow"
+        android:gravity="center"
+        android:text="3.5/5"
+        style="@style/MovieDetailWhite"
+        app:layout_constraintBottom_toTopOf="@+id/textView35"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:layout_marginBottom="3dp"
+        android:textSize="14sp"
+        style="@style/MovieDetailWhite"
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2,000 Users"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:textSize="16sp"
+        style="@style/MovieDetailWhite"
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02 jan 2019 1h 40min"
+        app:layout_constraintBottom_toTopOf="@+id/textView34"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="15dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

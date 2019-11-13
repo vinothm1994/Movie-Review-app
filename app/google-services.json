@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "694466222740",
+    "firebase_url": "https://my-review-2543a.firebaseio.com",
+    "project_id": "my-review-2543a",
+    "storage_bucket": "my-review-2543a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694466222740:android:1477274960059f04cd3281",
+        "android_client_info": {
+          "package_name": "com.aswartha_solutions.myreview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694466222740-4b6i79kqdjom1j5ina8enh5utd4auj7a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aswartha_solutions.myreview",
+            "certificate_hash": "2350195e69f2c8717152351951bb41082db0241f"
+          }
+        },
+        {
+          "client_id": "694466222740-lid66sj8k9vlffsik3b761bdc57hqqm1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPevI5N4m1a3pylAY78LOaxG8co68k18E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694466222740-lid66sj8k9vlffsik3b761bdc57hqqm1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

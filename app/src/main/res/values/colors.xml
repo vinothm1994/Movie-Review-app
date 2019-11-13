@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="primaryColor">#795548</color>
+    <color name="primaryLightColor">#a98274</color>
+    <color name="primaryDarkColor">#4b2c20</color>
+    <color name="secondaryColor">#4e342e</color>
+    <color name="secondaryLightColor">#7b5e57</color>
+    <color name="secondaryDarkColor">#260e04</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#ffffff</color>
+
+
+    <color name="brown_900">#3E2723</color>
+
+    <color name="text_color">#472D30</color>
+
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="transparent">#0fff</color>
+
+
+
+    <color name="color_control_light">#39000000</color> <!-- Same as
+
+
+
+     textColorPrimary disabled -->
+
+    <!-- Scrim colors -->
+    <color name="system_ui_scrim_light">#B3FFFFFF</color> <!-- 70% white -->
+    <color name="system_ui_scrim_black">#40000000</color> <!-- 25% black -->
+
+    <!-- We use a dark scrim by default since light status is API 23+ -->
+    <color name="status_bar_scrim">@color/system_ui_scrim_black</color>
+    <!-- We use a dark scrim by default since light nav bar is API 27+ -->
+    <color name="nav_bar_scrim">@color/system_ui_scrim_black</color>
+
+</resources>
+

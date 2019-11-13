@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home"
+    tools:ignore="UnusedNavigation">
+
+
+
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.example.myreview.ui.fav_review.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myreview.ui.movie_detail.MovieDetailFragment"
+        android:label="fragment_movie_detail"
+        tools:layout="@layout/fragment_movie_detail" >
+        <action
+            android:id="@+id/action_navigation_home_to_movieReviewListFragment"
+            app:destination="@id/movieReviewListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieReviewDetailFragment"
+        android:name="com.example.myreview.ui.movies_review_detail.MovieReviewDetailFragment"
+        android:label="fragment_movie_review_detail"
+        tools:layout="@layout/fragment_movie_review_detail" />
+    <fragment
+        android:id="@+id/movieReviewListFragment"
+        android:name="com.example.myreview.ui.movie_reviews.MovieReviewListFragment"
+        android:label="fragment_movie_review_list"
+        tools:layout="@layout/fragment_movie_review_list" >
+        <action
+            android:id="@+id/action_movieReviewListFragment_to_movieReviewDetailFragment"
+            app:destination="@id/movieReviewDetailFragment" />
+        <action
+            android:id="@+id/action_movieReviewListFragment_to_newMovieReviewFragment"
+            app:destination="@id/newMovieReviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.myreview.ui.my_profile.MyProfileFragment"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" />
+    <fragment
+        android:id="@+id/newMovieReviewFragment"
+        android:name="com.example.myreview.ui.new_review.NewMovieReviewFragment"
+        android:label="fragment_new_movie_review"
+        tools:layout="@layout/fragment_new_movie_review" />
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.myreview.ui.notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.example.myreview.ui.message.MessageFragment"
+        android:label="fragment_message_fragment"
+        tools:layout="@layout/fragment_message_fragment" />
+
+    <action
+        android:id="@+id/action_global_navigation_home"
+        app:destination="@id/navigation_home"
+        app:popUpTo="@+id/navigation_home" />
+
+</navigation>
